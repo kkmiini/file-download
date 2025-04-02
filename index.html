@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>new file download</title>
-    <meta charset="UTF-8" />
-  </head>
-  <body>
-    <input type="file" id="files" multiple />
-    <button onclick="download()">ダウンロード　</button> 
 
-    <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
-   
-    <script src="function2.js"></script>
+<head>
+  <title>パッチリスト比較</title>
+  <meta charset="UTF-8" />
+</head>
 
-  </body>
+<body>
+  <input type="file" id="files" multiple style="display:none" />
+  <button id="fileSelect" type="button">ファイル選択</button>
+
+  <button onclick="download()">比較</button>
+  <div class="file-names" id="fileNames"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+  <script src="func.js"></script>
+
+</body>
+
 </html>

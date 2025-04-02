@@ -1,6 +1,16 @@
 let mergedMap = new Map();
 let fileNames = [];
 
+const fileSelect = document.getElementById("fileSelect");
+const files = document.getElementById("files");
+
+fileSelect.addEventListener("click", (e) => {
+  if (files) {
+    files.click();
+  }
+}, false);
+
+
 document.getElementById("files").addEventListener("change", function (e) {
   const fileList = this.files;
   const fileNamesDiv = document.getElementById('fileNames');
